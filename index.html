@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'hsl(var(--primary-hsl))',
+              secondary: 'hsl(var(--secondary-hsl))',
+              accent: 'hsl(var(--accent-hsl))',
+              'primary-foreground': 'hsl(var(--primary-foreground-hsl))',
+            },
+            boxShadow: {
+              'soft': '0 4px 12px 0 rgba(0, 0, 0, 0.05)',
+              'soft-lg': '0 10px 25px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --primary-hsl: 250 80% 60%;
+        --secondary-hsl: 220 70% 55%;
+        --accent-hsl: 280 70% 65%;
+        --primary-foreground-hsl: 250 80% 98%;
+        --bg-start-hsl: 250 80% 98%;
+        --bg-mid-hsl: 220 70% 98%;
+        --bg-end-hsl: 280 70% 98%;
+      }
+      body {
+        background-color: #f8fafc; /* Fallback */
+        background-image: linear-gradient(160deg, hsla(var(--bg-start-hsl), 1) 0%, hsla(var(--bg-mid-hsl), 1) 50%, hsla(var(--bg-end-hsl), 1) 100%);
+        min-height: 100vh;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

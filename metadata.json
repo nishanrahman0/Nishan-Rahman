@@ -1,0 +1,5 @@
+{
+  "name": "Portfolio Content Management System",
+  "description": "A comprehensive content management system to dynamically edit and control all sections of a personal portfolio website. Features include theme customization, content editing for hero, about, skills, experience, and more.",
+  "requestFramePermissions": []
+}
